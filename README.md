@@ -91,7 +91,7 @@ Run these commands with `make <command>`:
 - `make build-prod`: Builds the project for production (includes minification).
 - `make dev`: Starts the development server.
 - `make run`: Runs the compiled application.
-- `make version-update`: Updates the project version.
+- `make version-up`: Updates the project version.
 - `make pre`: Runs pre-commit checks.
 
 #### Git Tag Management
@@ -113,7 +113,7 @@ The project includes additional commands for managing Git tags:
 - `start`: Runs the compiled application
 - `lint`: Lints the codebase
 - `format`: Formats the codebase
-- `version-update`: Updates the project version
+- `version-up`: Updates the project version
 - `pre-commit`: Runs linting and formatting before commit
 
 ## Version Management
