@@ -7,7 +7,7 @@ tag:
 	@git fetch --tags
 	@echo $(GIT_LAST_TAG) | sed 's/^@v//'
 
-tag-new:
+tag-new: tag
 	@echo $(GIT_NEW_TAG)
 
 tag-up:
