@@ -1,6 +1,6 @@
 {
   "name": "typescript-node-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A comprehensive TypeScript Node.js starter project with essential tools and configurations",
   "main": "dist/main.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "start": "node -r source-map-support/register -r module-alias/register dist/app/main.js",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write \"src/**/*.ts\"",
-    "version-update": "node scripts/version.js",
+    "version-up": "node scripts/version.js",
     "pre-commit": "npm run format && npm run lint"
   },
   "keywords": [
