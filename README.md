@@ -1,7 +1,7 @@
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-blue?logo=typescript)
 ![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20-green?logo=node.js)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/Well-do-it-too/typescript-node-starter)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Well-do-it-too/node-typescript-starter)
 
 # TypeScript Node.js Starter
 
@@ -30,8 +30,8 @@ A comprehensive starter template for TypeScript Node.js projects, equipped with 
 
 1. Clone the repository:
    ```
-   git clone https://github.com/Well-do-it-too/typescript-node-starter.git
-   cd typescript-node-starter
+   git clone https://github.com/Well-do-it-too/node-typescript-starter.git
+   cd node-typescript-starter
    ```
 
 2. Install dependencies:

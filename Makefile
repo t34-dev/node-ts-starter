@@ -2,7 +2,7 @@
 include .make/tag.mk
 
 # Application name
-APP_NAME := typescript-node-starter
+APP_NAME := node-typescript-starter
 
 # Set default target to help
 .DEFAULT_GOAL := help
