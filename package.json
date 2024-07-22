@@ -1,5 +1,5 @@
 {
-  "name": "typescript-node-starter",
+  "name": "node-typescript-starter",
   "version": "1.0.1",
   "description": "A comprehensive TypeScript Node.js starter project with essential tools and configurations",
   "main": "dist/main.js",
@@ -33,12 +33,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Well-do-it-too/typescript-node-starter.git"
+    "url": "https://github.com/Well-do-it-too/node-typescript-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/Well-do-it-too/typescript-node-starter/issues"
+    "url": "https://github.com/Well-do-it-too/node-typescript-starter/issues"
   },
-  "homepage": "https://github.com/Well-do-it-too/typescript-node-starter#readme",
+  "homepage": "https://github.com/Well-do-it-too/node-typescript-starter#readme",
   "_moduleAliases": {
     "@": "dist"
   },
