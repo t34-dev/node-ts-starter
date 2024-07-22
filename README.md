@@ -30,7 +30,7 @@ A comprehensive starter template for TypeScript Node.js projects, equipped with 
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/typescript-node-starter.git
+   git clone https://github.com/Well-do-it-too/typescript-node-starter.git
    cd typescript-node-starter
    ```
 
