@@ -28,16 +28,19 @@ jobs:
       - name: Update version in package.json
         run: node scripts/version.js ${{ steps.get_version.outputs.VERSION }}
 
-      - name: Update README.md
+      - name: Update README.md badges
         run: |
-          sed -i 's/\(https:\/\/img\.shields\.io\/github\/v\/tag\/Well-do-it-too\/node-typescript-starter\).*)/\1)/' README.md
+          sed -i 's|\(https://img\.shields\.io/github/v/tag/Well-do-it-too/node-typescript-starter\).*|\1?style=flat\&logo=github\&logoColor=white\&label=Latest%20Release\&color=blue)|' README.md
+          sed -i 's|\(https://img\.shields\.io/github/v/tag/Well-do-it-too/node-typescript-starter\).*|\1?sort=semver\&style=flat\&logo=git\&logoColor=white\&label=Latest%20Version\&color=blue)|' README.md
+          current_time=$(date +%s)
+          sed -i "s|\(https://img\.shields\.io/badge/dynamic/json?url=https://raw\.githubusercontent\.com/Well-do-it-too/node-typescript-starter/main/package\.json\).*|\1?version=$current_time\&query=\$\.version\&logo=npm\&logoColor=white\&label=Version\&color=blue)|" README.md
 
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add package.json README.md
-          git commit -m "Update version to ${{ steps.get_version.outputs.VERSION }} and refresh README badge"
+          git commit -m "Update version to ${{ steps.get_version.outputs.VERSION }} and refresh README badges"
 
       - name: Push changes
         run: |

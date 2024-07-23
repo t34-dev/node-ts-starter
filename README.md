@@ -3,6 +3,8 @@
 ![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20-green?logo=node.js)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Well-do-it-too/node-typescript-starter)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Well-do-it-too/node-typescript-starter)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Well-do-it-too/node-typescript-starter?style=flat&logo=github&logoColor=white&label=Latest%20Release&color=blue)
+![Dynamic version](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Well-do-it-too/node-typescript-starter/main/package.json&query=$.version&logo=npm&logoColor=white&label=Version&color=blue)
 
 # TypeScript Node.js Starter
 
