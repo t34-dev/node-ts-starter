@@ -30,10 +30,11 @@ jobs:
 
       - name: Update README.md badges
         run: |
-          sed -i 's|\(https://img\.shields\.io/github/v/tag/Well-do-it-too/node-typescript-starter\).*|\1?style=flat\&logo=github\&logoColor=white\&label=Latest%20Release\&color=blue)|' README.md
-          sed -i 's|\(https://img\.shields\.io/github/v/tag/Well-do-it-too/node-typescript-starter\).*|\1?sort=semver\&style=flat\&logo=git\&logoColor=white\&label=Latest%20Version\&color=blue)|' README.md
           current_time=$(date +%s)
-          sed -i "s|\(https://img\.shields\.io/badge/dynamic/json?url=https://raw\.githubusercontent\.com/Well-do-it-too/node-typescript-starter/main/package\.json\).*|\1?version=$current_time\&query=\$\.version\&logo=npm\&logoColor=white\&label=Version\&color=blue)|" README.md
+          sed -i "s|\(https://img\.shields\.io/badge/TypeScript-5\.5\.3-blue\?logo=typescript\)|\1\&v=$current_time|" README.md
+          sed -i "s|\(https://img\.shields\.io/badge/Node\.js-%3E%3D20-green\?logo=node\.js\)|\1\&v=$current_time|" README.md
+          sed -i "s|\(https://img\.shields\.io/github/v/release/Well-do-it-too/node-typescript-starter\)|\1?v=$current_time|" README.md
+          sed -i "s|\(https://img\.shields\.io/github/v/tag/Well-do-it-too/node-typescript-starter\?sort=semver\&style=flat\&logo=git\&logoColor=white\&label=Latest%20Version\&color=blue\)|\1\&v=$current_time|" README.md
 
       - name: Commit changes
         run: |
