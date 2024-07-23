@@ -46,6 +46,12 @@ You can use either pnpm scripts or Make commands to manage the project.
 
 ### Using pnpm scripts
 
+To run tests:
+
+```
+pnpm test
+```
+
 To start the development server with hot-reloading:
 
 ```
@@ -92,6 +98,7 @@ Run these commands with `make <command>`:
 - `make build-prod`: Builds the project for production (includes minification).
 - `make dev`: Starts the development server.
 - `make run`: Runs the compiled application.
+- `make test`: Runs the test suite.
 - `make version-up`: Updates the project version.
 - `make pre`: Runs pre-commit checks.
 
@@ -112,6 +119,7 @@ The project includes additional commands for managing Git tags:
 - `dist:minify`: Minifies distribution files
 - `dev`: Starts development server with hot-reloading
 - `start`: Runs the compiled application
+- `test`: Runs the test suite
 - `lint`: Lints the codebase
 - `format`: Formats the codebase
 - `version-up`: Updates the project version

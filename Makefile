@@ -32,6 +32,11 @@ run:
 	@echo "Running the application..."
 	@pnpm start
 
+# Run tests
+test:
+	@echo "Running tests..."
+	@pnpm test
+
 # Update version
 version-up:
 	@echo "Updating version..."
@@ -50,9 +55,10 @@ help:
 	@echo "  build-prod     - Build for production (includes minification)"
 	@echo "  dev            - Start development server"
 	@echo "  run            - Run the application"
+	@echo "  test           - Run the test suite"
 	@echo "  version-up 	- Update version"
 	@echo "  pre            - Run pre-commit checks"
 	@echo "  help           - Show this help message"
 
 # Declare phony targets
-.PHONY: all rmdist build build-prod dev run version-up pre help
+.PHONY: all rmdist build build-prod dev run test version-up pre help
