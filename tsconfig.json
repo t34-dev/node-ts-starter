@@ -21,7 +21,9 @@
     "inlineSourceMap": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "declaration": true,
+    "declarationMap": true
   },
   "include": [
     "src/**/*"
