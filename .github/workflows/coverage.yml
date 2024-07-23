@@ -31,11 +31,7 @@ jobs:
       - name: Update README.md badges
         run: |
           current_time=$(date +%s)
-          sed -i "s|\(https://img\.shields\.io/badge/TypeScript-.*blue?logo=typescript\)|\1\&v=$current_time|" README.md
-          sed -i "s|\(https://img\.shields\.io/badge/Node\.js-.*green?logo=node\.js\)|\1\&v=$current_time|" README.md
-          sed -i "s|\(https://img\.shields\.io/github/v/release/Well-do-it-too/node-typescript-starter\)|\1?v=$current_time|" README.md
-          sed -i "s|\(https://img\.shields\.io/github/v/tag/Well-do-it-too/node-typescript-starter?.*\)|\1\&v=$current_time|" README.md
-          sed -i "s|\(https://img\.shields\.io/github/v/release/Well-do-it-too/node-typescript-starter?v=[0-9]*\)?v=[0-9]*|\1|" README.md
+          sed -i "s/\(https:\/\/img\.shields\.io\/.*&v=\)[0-9]*/\1$current_time/g" README.md
 
       - name: Commit changes
         run: |
