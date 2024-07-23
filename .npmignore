@@ -1,0 +1,12 @@
+src/
+   tests/
+   scripts/
+   .github/
+   .vscode/
+   .husky/
+   .eslintrc.js
+   .prettierrc
+   tsconfig.json
+   jest.config.js
+   Makefile
+   .make/

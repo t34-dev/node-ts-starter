@@ -1,8 +1,14 @@
 {
-  "name": "node-typescript-starter",
+  "name": "@well-do-it-too/node-typescript-starter",
   "version": "1.0.11",
   "description": "A comprehensive TypeScript Node.js starter project with essential tools and configurations",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "prepare": "husky",
     "clean": "shx rm -rf node_modules pnpm-lock.yaml",
@@ -16,7 +22,8 @@
     "lint": "eslint . --ext .ts",
     "format": "prettier --write \"src/**/*.ts\"",
     "version-up": "node scripts/version.js",
-    "pre-commit": "npm run format && npm run lint"
+    "pre-commit": "npm run format && npm run lint",
+    "prepublishOnly": "npm run build:prod"
   },
   "keywords": [
     "typescript",
