@@ -2,6 +2,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-blue?logo=typescript)
 ![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20-green?logo=node.js)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Well-do-it-too/node-typescript-starter)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Well-do-it-too/node-typescript-starter)
 
 # TypeScript Node.js Starter
 

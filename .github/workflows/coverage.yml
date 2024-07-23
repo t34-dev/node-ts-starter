@@ -28,11 +28,16 @@ jobs:
       - name: Update version in package.json
         run: node scripts/version.js ${{ steps.get_version.outputs.VERSION }}
 
+      - name: Update README.md
+        run: |
+          sed -i 's/\(https:\/\/img\.shields\.io\/github\/v\/tag\/Well-do-it-too\/node-typescript-starter\).*)/\1)/' README.md
+
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git commit -am "Update version to ${{ steps.get_version.outputs.VERSION }}"
+          git add package.json README.md
+          git commit -m "Update version to ${{ steps.get_version.outputs.VERSION }} and refresh README badge"
 
       - name: Push changes
         run: |
