@@ -1,6 +1,6 @@
 {
   "name": "node-typescript-starter",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A comprehensive TypeScript Node.js starter project with essential tools and configurations",
   "main": "dist/main.js",
   "scripts": {
