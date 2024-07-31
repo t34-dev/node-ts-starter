@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest';
 import { testFunction } from '@/app/test';
 
 describe('greet function', () => {

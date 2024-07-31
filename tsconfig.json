@@ -1,32 +1,21 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "commonjs",
-    "lib": ["ES2020", "DOM"],
-    "types": ["node", "jest"],
-    "typeRoots": [
-      "./node_modules/@types"
-    ],
-    "outDir": "./dist",
-    "rootDir": "./src",
+    "target": "es2018",
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "outDir": "dist",
     "strict": true,
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": "./",
+    "rootDir": "src",
+    "baseUrl": "src",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./*"]
     },
-    "sourceMap": true,
-    "inlineSourceMap": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "declaration": true,
-    "declarationMap": true
+    "types": ["node", "vitest/globals"]
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*", "test/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
