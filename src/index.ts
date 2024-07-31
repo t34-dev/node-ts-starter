@@ -1,6 +1,5 @@
-import 'source-map-support/register';
-import { ENV } from '@/env';
 import { testFunction } from '@/app/test';
+import { ENV } from '@/env';
 export { testFunction } from '@/app/test';
 export * from '@/env';
 

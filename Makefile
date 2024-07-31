@@ -2,7 +2,7 @@
 include .make/tag.mk
 
 # Application name
-APP_NAME := node-typescript-starter
+APP_NAME := ts-websocket-client
 
 # Set default target to help
 .DEFAULT_GOAL := help
@@ -12,25 +12,22 @@ rmdist:
 	@echo "Removing dist folder..."
 	@pnpm rmdist
 
-# Build the project
+# Clean project
+clean:
+	@echo "Cleaning project..."
+	@pnpm clean
+
+# Build the package
 build: rmdist
-	@echo "Building project..."
+	@echo "Building package..."
 	@pnpm build
 
-# Build for production
-build-prod: build
-	@echo "Minifying distribution files..."
-	@pnpm dist:minify
-
-# Run development server
-dev:
-	@echo "Starting development server..."
+dev: rmdist
 	@pnpm dev
 
-# Start the application
-run:
-	@echo "Running the application..."
-	@pnpm start
+# Build the package
+serve:
+	@pnpm serve
 
 # Run tests
 test:
@@ -47,18 +44,34 @@ pre:
 	@echo "Running pre-commit checks..."
 	@pnpm pre-commit
 
+# Run linter
+lint:
+	@echo "Running linter..."
+	@pnpm lint
+
+# Format code
+format:
+	@echo "Formatting code..."
+	@pnpm format
+
+# Run all checks
+check: lint format
+	@echo "Running all checks..."
+	@pnpm check
+
 # Help target
 help:
 	@echo "Available targets:"
+	@echo "  clean          - Clean project (remove node_modules and lock file)"
 	@echo "  rmdist         - Remove dist folder"
-	@echo "  build          - Build the project"
-	@echo "  build-prod     - Build for production (includes minification)"
-	@echo "  dev            - Start development server"
-	@echo "  run            - Run the application"
+	@echo "  build          - Build the package"
 	@echo "  test           - Run the test suite"
-	@echo "  version-up 	- Update version"
-	@echo "  pre            - Run pre-commit checks"
+	@echo "  version-up     - Update version"
+	@echo "  pre     		- Run pre-commit checks"
+	@echo "  lint           - Run linter"
+	@echo "  format         - Format code"
+	@echo "  check          - Run all checks (lint and format)"
 	@echo "  help           - Show this help message"
 
 # Declare phony targets
-.PHONY: all rmdist build build-prod dev run test version-up pre help
+.PHONY: clean rmdist build test version-up pre lint format check help
