@@ -22,11 +22,14 @@ build: rmdist
 	@echo "Building package..."
 	@pnpm build
 
-dev: rmdist
+# Run development server
+dev:
+	@echo "Starting development server..."
 	@pnpm dev
 
-# Build the package
+# Serve the built application
 serve:
+	@echo "Serving the application..."
 	@pnpm serve
 
 # Run tests
@@ -65,13 +68,15 @@ help:
 	@echo "  clean          - Clean project (remove node_modules and lock file)"
 	@echo "  rmdist         - Remove dist folder"
 	@echo "  build          - Build the package"
+	@echo "  dev            - Start development server"
+	@echo "  serve          - Serve the built application"
 	@echo "  test           - Run the test suite"
 	@echo "  version-up     - Update version"
-	@echo "  pre     		- Run pre-commit checks"
+	@echo "  pre            - Run pre-commit checks"
 	@echo "  lint           - Run linter"
 	@echo "  format         - Format code"
 	@echo "  check          - Run all checks (lint and format)"
 	@echo "  help           - Show this help message"
 
 # Declare phony targets
-.PHONY: clean rmdist build test version-up pre lint format check help
+.PHONY: clean rmdist build dev serve test version-up pre lint format check help
