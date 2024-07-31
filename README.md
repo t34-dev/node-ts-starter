@@ -159,3 +159,7 @@ Remember to run `make pre` or `pnpm run pre-commit` before committing your chang
 - [Prettier](https://prettier.io/)
 - [Husky](https://typicode.github.io/husky/#/)
 - [GNU Make](https://www.gnu.org/software/make/)
+
+---
+
+Developed with ❤️ by [Well-do-it-too](https://github.com/Well-do-it-too)
