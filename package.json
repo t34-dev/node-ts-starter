@@ -16,11 +16,11 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "serve": "node dist/index.js",
-    "test": "vitest",
-    "lint": "eslint \"{src,test,scripts}/**/*.ts\" \"*.json\"",
-    "format": "prettier --write \"{src,test,scripts}/**/*.ts\" \"*.json\"",
-    "check": "npm run lint && prettier --check \"{src,test,scripts}/**/*.ts\" \"*.json\"",
     "version-up": "node scripts/version.js",
+    "test": "vitest",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "check": "npm run lint && prettier --check .",
     "pre-commit": "npm run format && npm run check"
   },
   "keywords": [
