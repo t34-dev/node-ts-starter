@@ -30,6 +30,7 @@ A comprehensive starter template for TypeScript Node.js projects, equipped with 
 ## Installation
 
 1. Clone the repository:
+
    ```
    git clone https://github.com/Well-do-it-too/node-typescript-starter.git
    cd node-typescript-starter
