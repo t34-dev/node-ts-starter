@@ -1,6 +1,6 @@
 {
   "name": "@well-do-it-too/node-typescript-starter",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "A comprehensive TypeScript Node.js starter project with essential tools and configurations",
   "type": "module",
   "main": "dist/index.js",
