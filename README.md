@@ -1,8 +1,8 @@
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.3.x-blue?logo=typescript&v=1722516632)
-![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20.0.0-green?logo=node.js&v=1722516632)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/Well-do-it-too/node-typescript-starter?v=0)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Well-do-it-too/node-typescript-starter?sort=semver&style=flat&logo=git&logoColor=white&label=Latest%20Version&color=blue&v=1722516632)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.3.x-blue?logo=typescript&ver=1722516632)
+![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20.0.0-green?logo=node.js&ver=1722516632)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/t34-dev/node-ts-starter?ver=1722516632)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/t34-dev/node-ts-starter?sort=semver&style=flat&logo=git&logoColor=white&label=Latest%20Version&color=blue&ver=1722516632)
 
 # TypeScript Node.js Starter
 
@@ -32,8 +32,8 @@ A comprehensive starter template for TypeScript Node.js projects, equipped with 
 1. Clone the repository:
 
    ```
-   git clone https://github.com/Well-do-it-too/node-typescript-starter.git
-   cd node-typescript-starter
+   git clone https://github.com/t34-dev/node-ts-starter.git
+   cd node-ts-starter
    ```
 
 2. Install dependencies:
@@ -163,4 +163,4 @@ Remember to run `make pre` or `pnpm run pre-commit` before committing your chang
 
 ---
 
-Developed with ❤️ by [Well-do-it-too](https://github.com/Well-do-it-too)
+Developed with ❤️ by [T34](https://github.com/t34-dev)

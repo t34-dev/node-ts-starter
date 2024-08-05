@@ -1,4 +1,4 @@
-name: Update Version on Tag
+name: update_version_on_tag
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  update-version:
+  update-package-and-badges:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -34,7 +34,7 @@ jobs:
       - name: Update README.md badges
         run: |
           current_time=$(date +%s)
-          sed -i "s/\(https:\/\/img\.shields\.io\/.*&v=\)[0-9]*/\1$current_time/g" README.md
+          sed -i 's/\(ver=\)[0-9]*/\1'"$current_time"'/g' README.md
 
       - name: Commit changes
         run: |
