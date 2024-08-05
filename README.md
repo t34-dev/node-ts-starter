@@ -1,8 +1,8 @@
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.3.x-blue?logo=typescript&ver=1722516632)
-![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20.0.0-green?logo=node.js&ver=1722516632)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/t34-dev/node-ts-starter?ver=1722516632)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/t34-dev/node-ts-starter?sort=semver&style=flat&logo=git&logoColor=white&label=Latest%20Version&color=blue&ver=1722516632)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.3.x-blue?logo=typescript&ver=1722868496)
+![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20.0.0-green?logo=node.js&ver=1722868496)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/t34-dev/node-ts-starter?ver=1722868496)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/t34-dev/node-ts-starter?sort=semver&style=flat&logo=git&logoColor=white&label=Latest%20Version&color=blue&ver=1722868496)
 
 # TypeScript Node.js Starter
 
